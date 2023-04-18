@@ -4,6 +4,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import {NgxGalleryModule} from '@kolkov/ngx-gallery';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [],
@@ -11,6 +12,7 @@ import {NgxGalleryModule} from '@kolkov/ngx-gallery';
     CommonModule,
     NgxGalleryModule,
     BsDropdownModule.forRoot(),
+    BsDatepickerModule.forRoot(),
     TabsModule.forRoot(),
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
@@ -20,7 +22,8 @@ import {NgxGalleryModule} from '@kolkov/ngx-gallery';
     BsDropdownModule,
     TabsModule,
     ToastrModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    BsDatepickerModule
   ]
 })
 export class SharedModule { }
